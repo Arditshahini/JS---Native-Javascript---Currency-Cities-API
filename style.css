@@ -1,0 +1,178 @@
+#myForm {
+  justify-content: center;
+  width: 200px;
+  padding: 40px;
+  border-style: solid;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+  border-style: solid;
+}
+
+
+#result {
+  border-style: solid;
+  text-align: left;
+  padding: 20px;
+  min-width: 500px;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+#result table {
+  border-collapse: collapse;
+}
+
+#result table td,
+#result table th {
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+#result table th {
+  background-color: gray  ;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+/* STYLEEGENSKAPER FÖR INDEX1.HTML*/
+body {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-top: 100px;
+  overflow-x: hidden;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  margin: 0 auto;
+  background-color: skyblue;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.brand-title {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  margin-left: 2vw;
+}
+
+.navbar-links {
+  height: 100%;
+  font-weight: bold;
+}
+
+.navbar-links ul {
+  display: flex;
+  padding: 0;
+  margin-top: 3.5vh;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  margin: 2vw;
+}
+
+.navbar-links li:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.main {
+  width: 50vw;
+  margin: auto;
+  padding: 100px;
+  border-radius: 20px;
+  background-color: white(0, 0, 0, 0.5);
+  color: black;
+  max-height: 400px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.btn {
+  width: 200px;
+}
+
+#finalAmount {
+  font-family: 'Arial';
+  display: none;
+  margin: 50px auto;
+}
+
+#finalAmount h2 {
+  font-size: 30px;
+}
+
+.finalValue {
+  font-family: 'Arial', serif;
+}
+
+@media (max-width: 768px) {
+  hr {
+    width: 60%;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .heading {
+    font-size: 60px;
+  }
+
+  hr {
+    width: 75%;
+  }
+
+  #finalAmount h2,
+  .finalValue {
+    font-size: 40px;
+  }
+}
+
+
+
+
+
